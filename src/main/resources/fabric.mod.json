@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "mcspa",
+	"version": "${version}",
+	"name": "McSPA",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"gtro001"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mcspa/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.gtro.McSPA"
+		],
+		"client": [
+			"com.gtro.McSPAClient"
+		],
+		"fabric-datagen": [
+			"com.gtro.McSPADataGenerator"
+		]
+	},
+	"mixins": [
+		"mcspa.mixins.json",
+		{
+			"config": "mcspa.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*",
+		"cloth-config2": ">=19.0.147"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

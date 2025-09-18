@@ -1,0 +1,6 @@
+#连接码
+code = "minecraft"
+#是否开启debug模式
+debug = false
+#加密方式:目前仅使用了AES
+algorithm = "AES"
