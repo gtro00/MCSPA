@@ -13,7 +13,7 @@ import java.util.List;
         @Comment("是否开启调试模式")
         public boolean debug = false;
         @Comment("加密类型")
-        public boolean simple_mode=true;
+        public boolean simple_mode=false;
 
         @Comment("需要敲门的服务器")
         public List<String> serverlist=List.of("127.0.0.1","localhost");
